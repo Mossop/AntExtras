@@ -4,17 +4,13 @@
 
 <project name="AntExtras" default="build">
 
-	<taskdef name="concat" classname="com.esp.antextras.Concatenate"/>
-
 	<property name="AppName" value="antextras"/>
 
 	&includes;
 
 	<target name="build" depends="basebuild"/>
 
-	<target name="package" depends="basepackage">
-		<copy file="${base}/${ant.project.name}.jar" todir="c:/java/ant-1.3/lib"/>
-	</target>
+	<target name="package" depends="basepackage"/>
 
 	<target name="docs" depends="basedocs"/>
 	
